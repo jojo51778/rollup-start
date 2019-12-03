@@ -1,6 +1,5 @@
-import answer from 'the-answer'
-import _ from 'lodash'
+import update from './update.js';
 
-export default function() {
-  console.log('the answer is' + answer)
-}
+console.log('if you have sourcemaps enabled in your devtools, click on main.js:5 -->');
+
+update();
