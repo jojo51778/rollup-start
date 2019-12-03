@@ -1,4 +1,4 @@
-import json from 'rollup-plugin-json'
+import resolve from 'rollup-plugin-node-resolve'
 
 export default {
   input: 'src/main.js',
@@ -6,5 +6,12 @@ export default {
     file: 'bundle.js',
     format: 'cjs'
   },
-  plugins: [ json() ]
+  plugins: [resolve({
+    // 将自定义选项传递给解析插件
+    customResolveOptions: {
+      moduleDirectory: 'node_modules'
+    }
+  })],
+  // 外部模块
+  external: ['lodash']
 }

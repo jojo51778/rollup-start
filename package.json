@@ -8,8 +8,12 @@
   },
   "author": "jojo51778",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "the-answer": "^1.0.0"
+  },
   "devDependencies": {
-    "rollup-plugin-json": "^4.0.0"
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }
